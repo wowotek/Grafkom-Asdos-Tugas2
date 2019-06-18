@@ -19,7 +19,7 @@ void init(void)
     glEnable(GL_BLEND);
     // ------------
 
-    glutTimerFunc(FRAME_RATE, updateScreen, FRAME_RATE);
+    glutTimerFunc(10, updateScreen, 10);
     gluOrtho2D(0, WIDTH, HEIGHT, 0);
 }
 

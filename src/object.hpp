@@ -11,14 +11,19 @@
 class Object{
     private:
         float posx, posy;
+        
         float sizex, sizey;
-        float r, g, b;
+        bool bigger;
+
+        float color[3];
+        int colorIncrement;
+        bool colorIncrementing;
 
         float scale, rotation;
     
         bool squeezing;
     public:
-        Object(float, float, float, float, float, float, float);
+        Object(float, float, float, float, unsigned char, unsigned char, unsigned char);
         void render(void);
         void update(void);
 

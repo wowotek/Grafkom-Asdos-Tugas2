@@ -7,7 +7,7 @@ void poly(float x, float y, float x_size, float y_size, float sides, float rotat
         glPushMatrix();
         GLfloat angle = 0.0f;
         for (size_t _k = 0; _k < sides; ++_k) {
-            glVertex2f(x + (x_size * cos(angle + rotation)), y + (y_size * sin(angle + rotation)));
+            glVertex2f(x + (x_size * cos(angle + (M_PI * rotation))), y + (y_size * sin(angle + (M_PI * rotation))));
             angle += angleIncrement;
         }
         glPopMatrix();

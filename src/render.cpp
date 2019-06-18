@@ -1,7 +1,7 @@
 #include "render.hpp"
 #include "object.hpp"
 
-Object c1(240, 240, 120, 120, 1, 0, 0);
+Object c1(240, 240, 240, 240, 0, 0, 254);
 
 void renderDisplay(void)
 {
@@ -21,3 +21,6 @@ void updateScreen(int value)
     glutPostRedisplay();
     glutTimerFunc(value, updateScreen, value);
 }
+
+// 672016135
+// TUGAS3_GRAFKOM_G_672017282_1
